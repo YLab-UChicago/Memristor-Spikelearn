@@ -7,6 +7,27 @@ Y. Liu, A. Yanguas-Gil, S. Madireddy and Y. Li, "Memristor-Spikelearn: A Spiking
 
 ## File structure
 
+```
+Memristor-Spikelearn
+├── examples
+│   ├── approximate_bp.py: MNIST classifier with approximate gradient descent
+│   └── stdp_mnist.py: MNIST classifier based on STDP
+├── mnist.npz
+├── model_data
+│   └── 1t1r_Paiyu_15.npz: look-up table specifying 1T1R synapse behavior
+└── src
+    └── spikelearn
+          ├── __init__.py
+          ├── generators.py
+          ├── loihi.py
+          ├── neurons.py: includes additional neurons needed to implement the examples
+          ├── rules.py
+          ├── snn.py
+          ├── synapses.py: includes various models of memristor device and synapse circuits
+          ├── trace.py
+          └── transforms.py
+```
+
 ## Demos
 
 `examples/stdp_mnist.py`: This file implements a MNIST classifier based on spike timing dependent plasticity (STDP).
